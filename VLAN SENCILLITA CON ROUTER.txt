@@ -1,0 +1,401 @@
+C2950 Boot Loader (C2950-HBOOT-M) Version 12.1(11r)EA1, RELEASE SOFTWARE (fc1)
+Compiled Mon 22-Jul-02 18:57 by miwang
+Cisco WS-C2950-24 (RC32300) processor (revision C0) with 21039K bytes of memory.
+2950-24 starting...
+Base ethernet MAC Address: 00E0.F9B9.4856
+Xmodem file system is available.
+Initializing Flash...
+flashfs[0]: 1 files, 0 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 64016384
+flashfs[0]: Bytes used: 3058048
+flashfs[0]: Bytes available: 60958336
+flashfs[0]: flashfs fsck took 1 seconds.
+...done Initializing Flash.
+
+Boot Sector Filesystem (bs:) installed, fsid: 3
+Parameter Block Filesystem (pb:) installed, fsid: 4
+
+
+Loading "flash:/c2950-i6q4l2-mz.121-22.EA4.bin"...
+######################### [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Cisco WS-C2950-24 (RC32300) processor (revision C0) with 21039K bytes of memory.
+Processor board ID FHK0610Z0WC
+Running Standard Image
+24 FastEthernet/IEEE 802.3 interface(s)
+
+63488K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 00E0.F9B9.4856
+Motherboard assembly number: 73-5781-09 
+Power supply part number: 34-0965-01
+Motherboard serial number: FOC061004SZ
+Power supply serial number: DAB0609127D
+Model revision number: C0
+Motherboard revision number: A0
+Model number: WS-C2950-24
+System serial number: FHK0610Z0WC
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Press RETURN to get started!
+
+
+%LINK-5-CHANGED: Interface FastEthernet0/2, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/3, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/3, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/4, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/23, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/24, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINK-3-UPDOWN: Interface FastEthernet0/2, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to down
+
+%LINK-3-UPDOWN: Interface FastEthernet0/4, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to down
+
+%LINK-3-UPDOWN: Interface FastEthernet0/3, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/3, changed state to down
+
+%LINK-5-CHANGED: Interface FastEthernet0/2, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/2, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/4, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/4, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/3, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/3, changed state to up
+
+%LINK-3-UPDOWN: Interface FastEthernet0/24, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/24, changed state to down
+
+%LINK-5-CHANGED: Interface FastEthernet0/10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+
+%LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+
+%LINK-5-CHANGED: Interface FastEthernet0/11, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/11, changed state to up
+
+%LINK-3-UPDOWN: Interface FastEthernet0/23, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/23, changed state to down
+
+%LINK-5-CHANGED: Interface FastEthernet0/10, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+
+
+Switch>ENE
+Switch>ena
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+Switch(config)#
+Switch(config)#
+Switch(config)#vlan 100
+Switch(config-vlan)#name ALUMNOS
+Switch(config-vlan)#vlan 200 
+Switch(config-vlan)#name DOCENTES
+Switch(config-vlan)#vlan 99
+Switch(config-vlan)#name RESERVA
+Switch(config-vlan)#exit
+Switch(config)#int range fa0/2, fa 0/4, fa 0/6, fa 0/8, fa 0/10
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport acc
+Switch(config-if-range)#switchport access vlan 100
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport mode access 
+Switch(config-if-range)#exit
+Switch(config)#int range fa 0/1, fa 0/3, fa 0/5, fa 0/7, fa 0/9, fa 0/11
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport acc
+Switch(config-if-range)#switchport access vlan 200
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#exit
+Switch(config)#int range fa 0/12-24
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport access vlan 99
+Switch(config-if-range)#exit
+Switch(config)#do sh vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    
+99   RESERVA                          active    Fa0/12, Fa0/13, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24
+100  ALUMNOS                          active    Fa0/2, Fa0/4, Fa0/6, Fa0/8
+                                                Fa0/10
+200  DOCENTES                         active    Fa0/1, Fa0/3, Fa0/5, Fa0/7
+                                                Fa0/9, Fa0/11
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+Switch(config)#
+
+
+------------------------------------------------------------
+
+Router#vlan database
+% Warning: It is recommended to configure VLAN from config mode,
+  as VLAN database mode is being deprecated. Please consult user
+  documentation for configuring VTP/VLAN in config mode.
+
+Router(vlan)#
+Router(vlan)#exit
+APPLY completed.
+Exiting....
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 169.254.10.0 255.255.0.0
+Router(config-if)#ip address 169.254.10.0 255.255.0.0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 10.10.10.0 255.0.0.0
+Router(config-if)#ip address 10.10.10.0 255.0.0.0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address  
+% Incomplete command.
+Router(config-if)#ip address  
+% Incomplete command.
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address  
+% Incomplete command.
+Router(config-if)#ip address  
+% Incomplete command.
+Router(config-if)#
+
+
+
+
+
+
+
+
+Router con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router>
+Router>
+Router>ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa 0/0
+Router(config-if)#ip address 169.254.10.1 255.255.255.0
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#ip address 169.254.10.1 255.255.255.0
+Router(config-if)#no sh
+Router(config-if)#no shutdown 
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEtherinterface FastEtherneexitexit
+Router(config)#int fa 0/1
+Router(config-if)#ip add
+Router(config-if)#ip address 10.10.10.10.1 255.0.0.0
+                             ^
+% Invalid input detected at '^' marker.
+	
+Router(config-if)#ip address 10.10.10.1 255.0.0.0
+Router(config-if)#no sh
+Router(config-if)#exit
+Router(config)#do wr
+Building configuration...
+[OK]
+Router(config)#
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#
+Router#

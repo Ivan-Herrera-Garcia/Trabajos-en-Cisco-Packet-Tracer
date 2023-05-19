@@ -1,0 +1,11 @@
+Switch01> enable
+Switch01# config terminal
+Switch01(config)# interface GigabitEthernet 0/1
+Switch01(config-if)# switchport mode access
+Switch01(config-if)#switchport port-security
+Switch01(config-if)#switchport port-security maximum 1
+Switch01(config-if)# switchport port-security violation shutdown
+Switch01(config-if)# switchport port-security mac-address sticky
+Switch01(config-if)# end
+------------------------------------
+Switch01# show port-security interface "GigabitEthernet o fa" 0/1

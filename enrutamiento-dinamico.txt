@@ -1,0 +1,284 @@
+System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+
+Readonly ROMMON initialized
+
+Self decompressing the image :
+################################################System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Initializing memory for ECC
+..
+C1841 processor with 524288 Kbytes of main memory
+Main memory is configured to 64 bit mode with ECC enabled
+
+Readonly ROMMON initialized
+
+Self decompressing the image :
+########################################################################## [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+Image text-base: 0x60080608, data-base: 0x6270CD50
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+Processor board ID FTX0947Z18E
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+2 Low-speed serial(sync/async) network interface(s)
+191K bytes of NVRAM.
+63488K bytes of ATA CompactFlash (Read/Write)
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+
+Router>ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa 0/0
+Router(config-if)#iniip add 192.168.10.0 255.255.255.0
+Bad mask /24 for address 192.168.10.0
+Router(config-if)#ip add 192.168.10.1 255.255.255.0
+Router(config-if)#exit
+Router(config)#int se 0/1/0
+Router(config-if)#ip add 1.1.1.1 255.255.255.252
+Router(config-if)#exedend
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+wr
+Building configuration...
+[OK]
+Router#iniena
+Router#conf t
+Enter configuration commands, one per line. ip add 192.168.10.0 255int fa 0/0int fa 0/0
+Router(config-if)#no sh
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+%IP-4-DUPADDR: Duplicate address 192.168.10.1 on FastEthernet0/0, sourced by 000A.F39B.C4AD
+exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface Serial0/1/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface Serial0/1/0
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface Serial0/1/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/1/0, changed state to up
+
+Router(config-if)#end
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router#host CENTRO-COMPUTO
+            ^
+% Invalid input detected at '^' marker.
+	
+Router#ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#host Centro-Computo
+Centro-Computo(config)#int fa 0/0
+Centro-Computo(config-if)#ip add 192.168.10.1 255.255.255.0
+Centro-Computo(config-if)#end
+Centro-Computo#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Centro-Computo#ena
+Centro-Computo#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Centro-Computo(config)#int se 0/1/0
+Centro-Computo(config-if)#ip add 1.1.1.1 255.255.255.252
+Centro-Computo(config-if)#exit
+Centro-Computo(config)#do wr
+Building configuration...
+[OK]
+Centro-Computo(config)#route rip 
+Centro-Computo(config-router)#route rip ?
+% Unrecognized command
+Centro-Computo(config-router)#route ?
+% Unrecognized command
+Centro-Computo(config-router)#route route rip ?
+% Unrecognized command
+Centro-Computo(config-router)#ver 2
+Centro-Computo(config-router)#ver ?
+  <1-2>  version
+Centro-Computo(config-router)#network 192.168.10.0
+Centro-Computo(config-router)#network 1.1.1.0
+Centro-Computo(config-router)#exit
+Centro-Computo(config)#do wr
+Building configuration...
+[OK]
+Centro-Computo(config)#
+Centro-Computo#
+%SYS-5-CONFIG_I: Configured from console by console
+
+------------------------------------------------------------------
+System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+
+Readonly ROMMON initialized
+
+Self decompressing the image :
+######################System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Initializing memory for ECC
+..
+C1841 processor with 524288 Kbytes of main memory
+Main memory is configured to 64 bit mode with ECC enabled
+
+Readonly ROMMON initialized
+
+Self decompressing the image :
+########################################################################## [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+Image text-base: 0x60080608, data-base: 0x6270CD50
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+Processor board ID FTX0947Z18E
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+2 Low-speed serial(sync/async) network interface(s)
+191K bytes of NVRAM.
+63488K bytes of ATA CompactFlash (Read/Write)
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+
+
+Router>ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#host 19L
+19L(config)#int fa 0/0
+19L(config-if)#ip add 192.168.30.1 255.255.255.0
+19L(config-if)#no sh
+
+19L(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+exit
+19L(config)#int se 0/1/0
+19L(config-if)#ip add 1.1.1.3 255.255.255.252
+Bad mask /30 for address 1.1.1.3
+19L(config-if)#ip add 1.1.2.1 255.255.255.252
+19L(config-if)#exit
+19L(config)#do wr
+Building configuration...
+[OK]
+19L(config)#route rip
+19L(config-router)#ver 2
+19L(config-router)#net
+19L(config-router)#network 192.168.30.0
+19L(config-router)#network 1.1.2.1
+19L(config-router)#network 1.1.2.0
+19L(config-router)#exit
+19L(config)#do wr
+Building configuration...
+[OK]
+19L(config)#int se 0/1/0
+19L(config-if)#clock rate 64000
+This command applies only to DCE interfaces
+19L(config-if)#no sh
+
+%LINK-5-CHANGED: Interface Serial0/1/0, changed state to down
+19L(config-if)#
+%LINK-5-CHANGED: Interface Serial0/1/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/1/0, changed state to up

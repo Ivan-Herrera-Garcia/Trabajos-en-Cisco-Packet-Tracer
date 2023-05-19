@@ -1,0 +1,410 @@
+C2950 Boot Loader (C2950-HBOOT-M) Version 12.1(11r)EA1, RELEASE SOFTWARE (fc1)
+Compiled Mon 22-Jul-02 18:57 by miwang
+Cisco WS-C2950-24 (RC32300) processor (revision C0) with 21039K bytes of memory.
+2950-24 starting...
+Base ethernet MAC Address: 0009.7CCB.0ACA
+Xmodem file system is available.
+Initializing Flash...
+flashfs[0]: 1 files, 0 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 64016384
+flashfs[0]: Bytes used: 3058048
+flashfs[0]: Bytes available: 60958336
+flashfs[0]: flashfs fsck took 1 seconds.
+...done Initializing Flash.
+
+Boot Sector Filesystem (bs:) installed, fsid: 3
+Parameter Block Filesystem (pb:) installed, fsid: 4
+
+
+Loading "flash:/c2950-i6q4l2-mz.121-22.EA4.bin"...
+########################################################################## [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Cisco WS-C2950-24 (RC32300) processor (revision C0) with 21039K bytes of memory.
+Processor board ID FHK0610Z0WC
+Running Standard Image
+24 FastEthernet/IEEE 802.3 interface(s)
+
+63488K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 0009.7CCB.0ACA
+Motherboard assembly number: 73-5781-09 
+Power supply part number: 34-0965-01
+Motherboard serial number: FOC061004SZ
+Power supply serial number: DAB0609127D
+Model revision number: C0
+Motherboard revision number: A0
+Model number: WS-C2950-24
+System serial number: FHK0610Z0WC
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Press RETURN to get started!
+
+
+%LINK-5-CHANGED: Interface FastEthernet0/2, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/3, changed state to up
+
+%LINK-5-CHANGED: Interface FastEthernet0/4, changed state to up
+
+
+Switch>ena
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 20
+Switch(config-vlan)#name DATOS
+Switch(config-vlan)#vlan 30 
+Switch(config-vlan)#name VOZ
+Switch(config-vlan)#exit
+Switch(config)#vlan RESERVA
+                    ^
+% Invalid input detected at '^' marker.
+	
+Switch(config)#vlan 40
+Switch(config-vlan)#name RESERVA
+Switch(config-vlan)#exit
+Switch(config)#int range fa 0/2-4
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#sw
+Switch(config-if-range)#switchport voice vlan 30
+Switch(config-if-range)#exit
+Switch(config)#
+Switch(config)#int fa 0/1
+Switch(config-if)#sw
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#end
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#do wr
+          ^
+% Invalid input detected at '^' marker.
+	
+Switch#wr
+Building configuration...
+[OK]
+Switch#
+
+---------------------------------------------------------------------------------------------------------------------------
+
+System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+cisco 2811 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+Readonly ROMMON initialized
+
+program load complete, entry point: 0x8000f000, size: 0xc940
+program load complete, entry point: 0x8000f000, size: 0xc940
+
+program load complete, entry point: 0x8000f000, size: 0x3ed1338
+Self decompressing the image :
+########################################################################## [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+Image text-base: 0x400A925C, data-base: 0x4372CE20
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+cisco 2811 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+Processor board ID JAD05190MTZ (4292891495)
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+239K bytes of non-volatile configuration memory.
+62720K bytes of  ATA CompactFlash (Read/Write)
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+
+
+Router>ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#ubt fa 0/0
+                ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#unt fa 0/0
+                ^
+% Invalid input detected at '^' marker.
+	
+Router(config)#int fa 0/0
+Router(config-if)#exit
+Router(config)#ip dhcp pool DATOS
+Router(dhcp-config)#net
+Router(dhcp-config)#network 192.168.20.0 255.255.255.0
+Router(dhcp-config)#def
+Router(dhcp-config)#default-router 192.168.20.1
+Router(dhcp-config)#exit
+
+
+
+
+
+
+
+
+Router con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Router>en
+Router#wr
+Building configuration...
+[OK]
+Router#
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+cisco 2811 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+Readonly ROMMON initialized
+
+program load complete, entry point: 0x8000f000, size: 0xc940
+program load complete, entry point: 0x8000f000, size: 0xc940
+
+program load complete, entry point: 0x8000f000, size: 0x3ed1338
+Self decompressing the image :
+######################### [OK]
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+Image text-base: 0x400A925C, data-base: 0x4372CE20
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+cisco 2811 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+Processor board ID JAD05190MTZ (4292891495)
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+239K bytes of non-volatile configuration memory.
+62720K bytes of  ATA CompactFlash (Read/Write)
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+
+Press RETURN to get started!
+
+
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/0
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/1
+Router(config-if)#
+Router(config-if)#exit
+Router(config)#interface FastEthernet0/0
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#ena
+                   ^
+% Invalid input detected at '^' marker.
+	
+Router(config-if)#exit
+Router(config)#ip dhcp pool DATOS
+Router(dhcp-config)#net
+Router(dhcp-config)#network 192.168.20.0 255.255.255.0
+Router(dhcp-config)#def
+Router(dhcp-config)#default-router 192.168.20.1
+Router(dhcp-config)#option 150 ip 192.168.20.1
+Router(dhcp-config)#exit
+Router(config)#
+Router(config)#ip dhcp pool VOZ
+Router(dhcp-config)#network 192.168.30.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.30.1
+Router(dhcp-config)#option 150 ip 192.168.30.1
+Router(dhcp-config)#exit
+Router(config)#
+Router(config)#
+Router(config)#int fa 0/0.2 
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.2, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.2, changed state to up
+encap
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip add 192.168.20.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#int fa 0/0.3
+Router(config-subif)#
+%LINK-5-CHANGED: Interface FastEthernet0/0.3, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0.3, changed state to up
+
+Router(config-subif)#ip add 192.168.30.1 255.255.255.0
+
+% Configuring IP routing on a LAN subinterface is only allowed if that
+subinterface is already configured as part of an IEEE 802.10, IEEE 802.1Q,
+or ISL vLAN.
+
+Router(config-subif)#
+Router(config-subif)#
+Router(config-subif)#exit
+Router(config)#tele
+Router(config)#telephony-service 
+Router(config-telephony)#max-dn 3
+Router(config-telephony)#max-ephones
+% Incomplete command.
+Router(config-telephony)#max-ephones 3
+Router(config-telephony)#ip source 
+Router(config-telephony)#ip sourc
+Router(config-telephony)#ip source-address 192.168.30.1 port 2000
+Router(config-telephony)#auto assign 1 to 3
+Router(config-telephony)#ephone-dn
+                          ^
+% Invalid input detected at '^' marker.
+	
+Router(config-telephony)#ephone-dn 1
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 1.1, changed state to up
+
+Router(config-ephone-dn)#number 100
+Router(config-ephone-dn)#ephone-dn 2
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 2.1, changed state to up
+
+Router(config-ephone-dn)#number 101
+Router(config-ephone-dn)#ephone-dn 3
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 3.1, changed state to up
+
+Router(config-ephone-dn)#number 102
+Router(config-ephone-dn)#exit
+Router(config)#do wr
+Building configuration...
+[OK]
+Router(config)#
+Router(config)#
+Router(config)#%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.20.1.
+
+Router(config)#
+Router(config)#
+Router(config)#
+Router(config)#%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.20.1.
+
+Router(config)#int fa 0/0.3
+Router(config-subif)#encap
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip add 192.168.30.1 255.255.255.0
+Router(config-subif)#exit
+Router(config)#do wr
+Building configuration...
+[OK]

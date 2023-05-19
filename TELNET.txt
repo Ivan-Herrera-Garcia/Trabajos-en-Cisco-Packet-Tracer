@@ -1,0 +1,227 @@
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+Image text-base: 0x400A925C, data-base: 0x4372CE20
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+cisco 2811 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+Processor board ID JAD05190MTZ (4292891495)
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+239K bytes of non-volatile configuration memory.
+62720K bytes of  ATA CompactFlash (Read/Write)
+Cisco IOS Software, 2800 Software (C2800NM-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 06:21 by pt_rel_team
+
+
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+
+
+Router>ena
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#host TELNET
+TELNET(config)#int fa 0/0
+TELNET(config-if)#ip add 10.10.10.10 255.0.0.0
+TELNET(config-if)#no sh
+
+TELNET(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+TELNET(config-if)#exit
+TELNET(config)#line vty ?
+  <0-15>  First Line number
+TELNET(config)#line vty 
+
+
+
+
+
+
+
+
+TELNET con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+TELNET>ena
+TELNET#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+TELNET(config)#line vty 0 15
+TELNET(config-line)#pass
+TELNET(config-line)#password LONCHE
+TELNET(config-line)#login 
+TELNET(config-line)#
+TELNET(config-line)#
+TELNET(config-line)#exit
+TELNET(config)#do wr
+Building configuration...
+[OK]
+TELNET(config)#ena
+TELNET(config)#enable secret MIXTO
+TELNET(config)#do wr
+Building configuration...
+[OK]
+TELNET(config)#exit
+TELNET#
+%SYS-5-CONFIG_I: Configured from console by console
+
+TELNET#sh run
+Building configuration...
+
+Current configuration : 666 bytes
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname TELNET
+!
+!
+!
+enable secret 5 $1$mERr$iOPOgI6OMMElMAwVCV1xd/
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 10.10.10.10 255.0.0.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ password LONCHE
+ login
+line vty 5 15
+ password LONCHE
+ login
+!
+!
+!
+end
+
+
+TELNET#%IP-4-DUPADDR: Duplicate address 10.10.10.10 on FastEthernet0/0, sourced by 0001.97DB.0B3D
+
+
+
+
+
+
+
+
+
+TELNET con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
